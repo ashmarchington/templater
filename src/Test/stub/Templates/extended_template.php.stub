@@ -1,0 +1,23 @@
+<?php
+
+return [
+    'extends' => 'example_template',
+    'layout' => [
+        'head' => [
+            'templates' => [
+                [
+                    'name' => 'alpha_head',
+                    'priority' => 0
+                ]
+            ]
+        ],
+        'body' => [
+            'templates' => [
+                [
+                    'name' => 'alpha_body',
+                    'priority' => 0
+                ]
+            ]
+        ]
+    ]
+];

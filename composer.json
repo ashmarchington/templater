@@ -1,0 +1,34 @@
+{
+    "name": "adm/templater",
+    "description": "templating system for .phtml based views",
+    "type": "library",
+    "require-dev": {
+        "opsway/psr12-strict-coding-standard": "^0.4.0",
+        "phpunit/phpunit": "^9.2",
+        "phpmd/phpmd": "^2.8"
+    },
+    "authors": [
+        {
+            "name": "Ashley Marchington",
+            "email": "ashmarchington@gmail.com"
+        }
+    ],
+    "require": {
+        "psr/container": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Adm\\Template\\": "src/Template/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Adm\\Template\\Test\\": "src/Test"
+        }
+    },
+    "scripts": {
+        "cs-check": "phpcs",
+        "cs-fix": "phpcbf"
+    },
+    "license": "Unlicense"
+}

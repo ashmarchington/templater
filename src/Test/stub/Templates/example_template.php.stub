@@ -1,0 +1,36 @@
+<?php
+
+declare(strict_types=1);
+
+return [
+    'extends' => false,
+    'layout' => [
+        'head' => [
+            'templates' => [
+                [
+                    'name' => 'base_head',
+                    'priority' => -1,
+                    'blocks' => [
+                        \Adm\Template\Test\stub\Blocks\ExampleBlock::class => 'block',
+                    ]
+                ],
+            ],
+        ],
+        'body' => [
+            'templates' => [
+                [
+                    'name' => 'base_body',
+                    'priority' => -1
+                ],
+            ],
+        ],
+        'footer' => [
+            'templates' => [
+                [
+                    'name' => 'base_footer',
+                    'priority' => 999
+                ],
+            ]
+        ]
+    ]
+];
